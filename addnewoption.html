@@ -1,0 +1,25 @@
+ 
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta charset="utf-8">  
+<meta name="viewport" content="width=device-width">  
+<title>Change options of <select> using  jQuery.</title>  
+</head>  
+<body>  
+<select>  
+<option id="c1" value="red">Red</option>  
+<option id="c2" value="green">Green</option>  
+<option id="c3" value="white">White</option>  
+<option id="c4" value="blue">Blue</option>  
+</select> 
+<button>Click to Change</button>
+<script>
+var option = $('<select></select>').attr("value", "orange").text("Orange");
+$("button").click(function(){
+  $("#c3").empty().append(option); 
+});
+</script>
+</body>  
+</html>  

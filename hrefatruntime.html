@@ -1,0 +1,21 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta charset="utf-8">  
+<meta name="viewport" content="width=device-width">  
+<title>JS Bin</title>  
+</head>  
+<body>  
+<a class="link" href="http://example.com">Visit w3resource</a>  
+<p><input id="button1" type="button" value="Click to see the actual url"/></p>  
+<script>
+$(document).ready(function(){   
+  $('#button1').click(function(){   
+   $(".link").attr('href','http://www.w3resource.com/');  
+    
+  });  
+});  
+</script>
+</body>  
+</html>  
